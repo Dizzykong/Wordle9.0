@@ -79,6 +79,7 @@ def run_game():
     guesses = load_object("guesses.pkl")
     solutions = load_object("solutions.pkl")
     second_guess = load_object(f"second_guess_{currGuess}.pkl")
+    second_guess[125] = (['B', 'B', 'B', 'B', 'B'], 'slimy')
     for i in range(5):
         if i == 1:
             currGuess = grab_guess(currFeedback, second_guess)
